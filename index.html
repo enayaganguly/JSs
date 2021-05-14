@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>family book</title>
+    </head>
+    <body style="text-align: center;  background-image: linear-gradient(rgb(154, 183, 236), rgb(255, 255, 117));">
+        <h1>Family Book</h1>
+        <img src="https://thumbs.dreamstime.com/z/silhouette-family-three-people-walking-sunset-including-mother-father-young-child-playing-around-52401145.jpg" id="image" style="width: 500px; height: 500px; border-width: 20px; border-color: rgb(129, 57, 9); border-style: ridge;">
+        <h2 id= "label">Family</h3>
+        <button type="button" onclick= update() style="width: 1in; font-weight: bold;">Next</button>
+        <script>
+            var pictures= ["https://wwwimage-tve.cbsstatic.com/thumbnails/photos/w400-q80/cast/mom_cast_800x1000.jpg","https://i.insider.com/5df272bffd9db22295266cd8?width=1136&format=jpeg","https://www.carters.com/on/demandware.static/-/Sites-Carters-Library/default/dw2b22f61f/content/carters/cslp/sbc/040121/CAR_Q2_2021_KG_ShopAll.jpg"];
+            var names= ["Mom","Dad","Girl"];
+            i= 0;        
+    function update(){
+        i++;
+        var num= 3;
+        if(i>num){
+          i=0;  
+        }
+        var updimg= pictures[i];
+        var updname= names[i];
+        document.getElementById("image").src= updimg;
+        document.getElementById("label").innerHTML= updname;
+        }
+        </script>
+    </body>
+</html>
